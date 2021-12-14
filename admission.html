@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="campus.html">CAMPUS LIFE</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="health.html">HEALTH CARE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Admissions</h1>
+    </section>
+
+<!----------Admissions----------->
+
+<div class="container">
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">E-Mail</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="E-Mail" placeholder="Enter your Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="course">Course</label>
+        </div>
+        <div class="col-75">
+          <select id="course" name="course">
+            <option value="SELECT COURSE">SELECT COURSE</option>      
+            <option value="B.Tech">B.Tech</option>
+      <option value="BBA">BBA</option>
+      <option value="MBA">MBA</option>
+      <option value="B,Arch">B.Arch</option>
+      <option value="B.Design">B.Design</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="SOP">SOP</label>
+        </div>
+        <div class="col-75">
+          <textarea id="SOP" name="SOP" placeholder="Type sop here.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <a href="submit.html" class="hero-btn red-btn">SUBMIT</a>
+      </div>
+    </form>
+  </div>
+  

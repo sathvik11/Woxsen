@@ -1,0 +1,175 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="campus.html">CAMPUS LIFE</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="health.html">HEALTH CARE</a></li>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>Faculty</h1>
+    </section>
+
+    <section class="Faculty">
+        <div class="row">
+            <div class="about-col">
+                <h1>Dr. Amit Bhadra</h1>     
+                <p>Education:<br>
+                    Ph.D.,Pacific University, Udaipur PGDM, Marketing, IIM - Bangalore<br>
+                    Specialisation:<br>
+                    Marketing<br>
+                    Research:<br>
+                    Brand Management, Sales Management and Services Management.</p>
+            </div>
+            <div class="about-col">
+                <img src="amith-bhadra.jpg">
+            </div>
+        </div>    
+    </section>
+
+    <section class="Faculty">
+        <div class="row">
+            <div class="about-col">
+                <h1>Dr. Raul V. Rodriguez</h1>     
+                <p>Education:<br>
+                    Ph.D. in Artificial Intelligence and Robotic Process Applications to HR, San Miguel Univ, Mexico<br>
+                    Specialisation:<br>
+                    Artificial Intelligence and Robotic Process Applications to HR, Big Data and BI<br>
+                    Research:<br>
+                    Machine Learning, Deep Learning, Quantum Artificial Intelligence.</p>
+            </div>
+            <div class="about-col">
+                <img src="raulv.jpg">
+            </div>
+        </div>    
+    </section>
+
+    <section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Dr. Kiran Ravulakolla</h1>     
+            <p>Education:<br>
+                Ph.D in Computer Science, University of Sutherland (UK)<br>
+                Masters Certification in Artificial Intelligence, City University London.<br>
+                Specialisation:<br>
+                Computer Science, AI, NPL<br>
+                Research:<br>
+                Member of IQAC, BOS, RAC and INNS.</p>
+        </div>
+        <div class="about-col">
+            <img src="kiran-ravulakolla.jpg">
+        </div>
+    </div>    
+</section>
+
+<section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Mr.Amogh Deshmukh</h1>     
+            <p>Education:<br>
+                M.Tech, JNTUH, Hyderabadbad<br>
+                Specialisation:<br>
+                Computer Networks & Information Security<br>
+                Research:<br>
+                Using Deep Learning for Malware Detection, Using AI for Securing IOT Devices, Using AI & Deep Learning for Self-Driving Cars.</p>
+        </div>
+        <div class="about-col">
+            <img src="amogh-deshmukha.jpg">
+        </div>
+    </div>    
+</section>
+
+
+
+<section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Dr. Daya Shankar</h1>     
+            <p>Education:<br>
+                Ph.D., IIT, Guwahati, Assam<br>
+                Specialisation:<br>
+                Fluid & Thermal Engineering<br>
+                Research:<br>
+                Non-Linear Dynamics</p>
+        </div>
+        <div class="about-col">
+            <img src="dr daya shankar.jpg">
+        </div>
+    </div>    
+</section>
+
+<!---------- Application ----------->
+
+<h1>Application Form</h1>
+<section class="Applicaton">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 1234567890</h5>
+                    <p>Monday to Saturday 10 Am to 6 Pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>jobinfo@gmail.com</h5>
+                    <p>Email us your Resume and CV</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form method="post" action="contact-form-handler.php">
+            <input type="text" name="name" placeholder="Enter your name" required><br>
+            <select id="Position" name="Position">
+              <option value="Position">Position</option>
+              <option value="Professor">Professor</option>
+              <option value="Assistant Professor">Assistant Professor</option>
+              <option value="Lab Technician">Lab Technician</option>
+            </select>
+              
+            <input type="email" name="email" placeholder="Enter email address" required>
+            
+            <textarea rows="8" name="Questions" placeholder="Enter any Questions regaring the process" required></textarea>
+            <a href="submit.html" class="hero-btn red-btn">Apply Now</a>
+            </form> 
+        </div>
+    </div>
+</section>
+
+
+<!----JavaScript for toggle menu---->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+navLinks.style.right = "0";
+}
+
+function hideMenu() {
+navLinks.style.right = "-200px";
+}
+</script> 
+
+</body>
+</html>    

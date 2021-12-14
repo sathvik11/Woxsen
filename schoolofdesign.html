@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="campus.html">CAMPUS LIFE</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="health.html">HEALTH CARE</a></li>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>Faculty</h1>
+    </section>
+
+<section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Subhash Chandra</h1>     
+            <p>Education:<br>
+                M. Des in Toy and Game Design, National Institute of Design, Gandhinagar<br>
+                Specialisation:<br>
+                Industrial Designer</p>
+         </div>
+        <div class="about-col">
+            <img src="subhas-chandra-bose.jpg">
+        </div>
+    </div>    
+</section>
+
+<section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Suman Majumder</h1>     
+            <p>Education:<br>
+                M. Des in Interior and Furniture Design, Lovely Professional University<br>
+                Specialisation:<br>
+                Interior and Furniture Designer</p>
+            </div>
+        <div class="about-col">
+            <img src="suman-majumder.jpg">
+        </div>
+    </div>    
+</section>
+
+
+
+<section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Venkata Murali</h1>     
+            <p>Education:<br>
+                M.F.A., Hyderabad Central University
+B.F.A., Andhra University<br>
+                Specialisation:<br>
+               Painting<br>
+                Research:<br>
+                Kalamkari Artform</p>
+        </div>
+        <div class="about-col">
+            <img src="murali.jpg">
+        </div>
+    </div>    
+</section>
+
+
+<section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Sanjeet Varma</h1>     
+            <p>Education:<br>
+                M.P.A., Pondicherry University <br>
+                Specialisation:<br>
+                Fashion Design, Fashion Illustrator, Costume Design, Fabric Print Design <br>
+                Research:<br>
+                Biofabrics, Design for Dignity, Unconventional Fashion </p>
+        </div>
+        <div class="about-col">
+            <img src="sanjeet-varma.jpg">
+        </div>
+    </div>    
+</section>
+
+
+
+<section class="Faculty">
+    <div class="row">
+        <div class="about-col">
+            <h1>Jogi Panghaal</h1>     
+            <p>Education:<br>
+                Product Design, National Institute of Design (NID), Ahmedabad<br>
+                Specialisation:<br>
+                Product Design, Communication Skills: Rural & Urban, Service Design</p>
+        </div>
+        <div class="about-col">
+            <img src="jogi.jpg">
+        </div>
+    </div>    
+</section>
+
+
+
+<!----JavaScript for toggle menu---->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+navLinks.style.right = "0";
+}
+
+function hideMenu() {
+navLinks.style.right = "-200px";
+}
+</script> 
+
+</body>
+</html>    

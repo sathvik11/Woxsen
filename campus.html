@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="campus.html">CAMPUS LIFE</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="health.html">HEALTH CARE</a></li>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Campus Life</h1>
+    </section>
+<!---------- Facilities ---------->
+
+<section class="facility">
+    <h1>Our Facilities</h1>
+    
+        <div class="row">
+            <div class="facility-col">
+                <img src="lin_in.png">
+                <a href="lin_in.png" class="hero-btn red-btn">OPEN</a>
+                <h3>Library</h3>
+                <p>Explore the world of books.</p>
+            </div>
+            <div class="facility-col">
+                <img src="lab3.jpeg">
+                <a href="lab3.jpeg" class="hero-btn red-btn">OPEN</a>                
+                <h3>Labs</h3>
+                <p>Building a brighter future with robots.</p>
+            </div>
+            <div class="facility-col">
+                <img src="oval.jpeg">
+                <a href="oval.jpeg" class="hero-btn red-btn">OPEN</a>
+                <h3>Oval</h3>
+                <p>Light up your mood with Tasty foood.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="facility-col">
+                <img src="pool1.jpg">
+                <a href="pool1.jpg" class="hero-btn red-btn">OPEN</a>
+                <h3>Swimming Pool</h3>
+                <p>life is cool in the pool.</p>
+            </div>
+            <div class="facility-col">
+                <img src="gym.jpg">
+                <a href="gym.jpg" class="hero-btn red-btn">OPEN</a>
+                <h3>Gym</h3>
+                <p>Lift heavy today if you want strength tomorrow.</p>
+            </div>
+            <div class="facility-col">
+                <img src="sports.jpeg">
+                <a href="sports.jpeg" class="hero-btn red-btn">OPEN</a>
+                <h3>Sports Complex</h3>
+                <p>Get your Game on</p>
+            </div>
+        </div>
+</section>
+
+                    
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    

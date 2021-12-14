@@ -1,0 +1,175 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="campus.html">CAMPUS LIFE</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="health.html">HEALTH CARE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Woxsen University</h1>
+            <p>This Website is created by the Team Pranith, Koushik, Supriya, Khamarnath, Sathvik.</p>
+            <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
+    
+<!---------- course ----------->
+    
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <div class="row">
+        <div class="course-col">
+            <h3><a href="schoolofbusiness.html">School of Business</a></h3>
+            <p>School of business consists of BBA and MBA.</p>
+        </div>
+        <div class="course-col">
+            <h3><a href="schooloftechnolgy.html">School of Technolgy</a></h3>
+            <p>School of technology consists of CSE, AI & DS, Automation & Robotics, EEE, ECE, Mechatronics, Mechanical.</p>
+        </div>
+        <div class="course-col">
+            <h3><a href="schoolofdesign.html">School of design</a></h3>
+            <p>Fashion Design, Interior Design, Industrial Design, Communcation Design.</p>
+        </div>
+    </div>
+    <a href="admission.html" class="hero-btn red-btn">Apply Now</a>
+</section>
+    
+<!---------- campus ---------->
+    
+    <section class="campus">
+        <h1>Our campus life</h1>
+        <p>World Class Infrastructure</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="lecture.jpg">
+                    <div class="layer">
+                        <h3>Lecture Halls</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="lab2.jpeg">
+                    <div class="layer">
+                        <h3>Labs</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="pool.jpeg">
+                    <div class="layer">
+                        <h3>Gym & Pool</h3>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+<!---------- Facilities ---------->
+    
+    <section class="facility">
+        <h1>Our Facilities</h1>
+            <div class="row">
+                <div class="facility-col">
+                    <img src="lib_out.jpeg">
+                    <h3>World Class Library</h3>
+                    
+                </div>
+                <div class="facility-col">
+                    <img src="sports.jpeg">
+                    <h3>Sports Complex</h3>
+                    
+                </div>
+                <div class="facility-col">
+                    <img src="oval.jpeg">
+                    <h3>Tasty and Healthy Food</h3>
+                    
+                </div>
+            </div>
+    </section>
+    
+    
+<!---------- testimonials ---------->
+    
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Student Reviews.</p>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="kenny.jpeg">
+                    <div> 
+                        <p>My experience so far is one of pride that I have been able to be apart of my university. The dedication and hard work that has been put into my two years so far has allowed me to succeed in many ways, as well as increasing my self-development skills. The university is a great place to study and I would suggest it to anyone.
+
+                        </p>
+                        <h3>Kenny Joel</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="satwik.jpeg">
+                    <div>
+                        <p>Woxsen has world-class facilities that follow international standards. Hostel, food, medical facilities, sports and games are well where every student will enjoy their academic journey with these facilities. The classrooms are spacious with AI attendance. Library was the center of attraction where we can get journals, articles, subject books, magazines, etc.</p>
+                        <h3>Satwik Goud</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+<!------ Call To Action ------>
+
+<section class="cta">
+    
+    <h1>Enroll For Our Various Courses<br>Anywhere From The World</h1>
+
+</section>    
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>
+
+
+
+
+
+
+

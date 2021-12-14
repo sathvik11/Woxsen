@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="campus.html">CAMPUS LIFE</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="health.html">HEALTH CARE</a></li>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>About Us</h1>
+    </section>
+    
+    
+<!------- about us content -------->
+    
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's best university</h1>     
+            <p>Woxsen School of Business established in 2014, as an autonomous institution and declared as Woxsen University on 20 May 2020. WOU is among the first private universities of Telangana which offers vast variety of courses and is located on a 200-acre, residential campus at Hyderabad.</p>
+            <a href="https://www.youtube.com/watch?v=880Rreb_Eng" class="hero-btn red-btn">EXPOLER NOW</a>
+        </div>
+        <div class="img-comp-container">
+          <div class="img-comp-img">
+            <img src="admin_in.jpeg" width="300" height="200">
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img src="admin_in.jpeg" width="300" height="200">
+          </div>
+    </div>    
+</section>
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-user"></i></p>
+        <h3>2000+</h3>
+        <p>Students</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-user"></i></p>
+        <h3>50+</h3>
+        <p>Faculty</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-smile-o"></i></p>
+        <h3>1000+</h3>
+        <p>Pass outs</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <p><i class="fa fa-book"></i></p>
+        <h3>100+</h3>
+        <p>Campus placment companies</p>
+      </div>
+    </div>
+  </div>
+    
+   
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
